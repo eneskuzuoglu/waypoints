@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
 
     vector<pair<int, int>> waypoints = generateWaypoints(width, height, stepSizeY, stepSizeX, startY, startX, fromCenter);
 
-    ros::Rate loop_rate(1); // Publish rate: 1 Hz
+    ros::Rate loop_rate(20); // Publish rate: 1 Hz
 
     while (ros::ok()) {
         std_msgs::Header msg;
